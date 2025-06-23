@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Questions/MCQs</title>
+</head>
+
+<body>
+  <h2>Upload PDF and Generate Questions/MCQs</h2>
+  <form action="run_trial.php" method="post" enctype="multipart/form-data">
+    <label>PDF File: <input type="file" name="pdf" required></label><br><br>
+    <label>One Markers: <input type="number" name="one_marker" min="0" required></label><br><br>
+    <label>Two Markers: <input type="number" name="two_marker" min="0" required></label><br><br>
+    <label>Five Markers: <input type="number" name="five_marker" min="0" required></label><br><br>
+    <label>MCQ Count (optional): <input type="number" name="mcq_count" min="0"></label><br><br>
+    <button type="submit">Generate</button>
+  </form>
+</body>
+
+</html>
